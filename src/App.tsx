@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import swUrl from '/sw_cached_site.js?url'
 import './App.css'
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
     }
 
     navigator.serviceWorker
-      .register('/sw_cached_site.js')
+      .register(swUrl)
       .then(() => console.log('service worker: registered'))
       .catch(console.error)
   }, [])
