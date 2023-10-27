@@ -20,6 +20,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src", "serviceWorker/sw_cached_pages.js"],
+  "include": ["src", "public/sw_cached pages.js"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

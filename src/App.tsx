@@ -8,8 +8,10 @@ function App() {
       return
     }
 
-    const swUrl = 'serviceWorker/sw_cached_pages.js'
-    navigator.serviceWorker.register(swUrl)
+    navigator.serviceWorker
+      .register('/sw_cached_site.js')
+      .then(() => console.log('service worker: registered'))
+      .catch(console.error)
   }, [])
 
   return (
